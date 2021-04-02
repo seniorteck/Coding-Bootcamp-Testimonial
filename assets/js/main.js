@@ -44,8 +44,6 @@ nextbutton.addEventListener('click', () => {
     // change the 
     author1.setAttribute('src', 'assets/images/image-john.jpg')
 
-
-
 })
 
 

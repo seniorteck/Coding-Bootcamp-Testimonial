@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper{
+    width: 85%;
+    margin: 10% auto;
+    text-align: center;
+
+}
+
+.wrap-a{
+    background: url(../images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 310px;
+    background-position: center top;
+    margin: 60px 0 20px;
+    padding: 28px 20px;
+    position: relative;
+}
+
+.nav-slider{
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    width: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 13px;
+    border-radius: 50px;
+}
+
+.nav-slider img{
+    height: 13px;
+    width: 10px;
+    cursor: pointer;
+}
+
+.author1{
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0px 15px 30px 2px rgba(0, 0, 0, 0.2);
+}
+
+article p{
+    color: hsl(240, 38%, 20%);
+    font-size: 1em ;
+    line-height: 1.5em;
+}
+
+.wrap-b{
+    background: url(../images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: center top;
+    padding: 20px;
+}
+
+.author-bio{
+    margin: 20px;
+}
+
+.author-bio h4{
+   color: hsl(240, 38%, 20%);
+}
+
+
+.author-bio span{
+    color: hsl(240, 18%, 77%);
+    display: block;
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 900px) {
+
+    .wrapper{
+        width: 90%;
+        max-width: 830px;
+        margin: 5% auto;
+        text-align: left;
+    }
+
+    .author1{
+        width: 350px;
+        border-radius: 5px;
+    }
+
+    .wrap-a{
+        background-size: 450px;
+        background-position: center top;
+        margin: 0;
+        padding: 40px 50px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        align-items: center;
+    }
+
+    .nav-slider{
+        bottom: 15px;
+        left: -200px;
+        background: #fff;
+        width: 80px;
+    }
+
+    .wrap-b{
+        position: absolute;
+        padding-left: 70px;
+        padding-right: 360px;
+        background-size: 70px;
+        background-position: 130px top;
+    }
+
+    article p{
+        font-size: 1.2em ;
+        line-height: 1.5em;
+        padding-top: 17px;
+    }
+
+    .author-bio{
+        margin: 25px 0;
+    }
+
+    .author-bio h4{
+        display: inline;
+        font-size: .8em;
+     }
+     
+     .author-bio span{
+        display: inline;
+        margin-left: 5px;
+        font-size: .7em;
+     }
+}
+
